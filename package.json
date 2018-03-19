@@ -4,12 +4,12 @@
   "description": "This website will house research experiments which ended in failure",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch",
     "start": "node ./server/index.js",
     "build": "webpack -p",
     "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server-dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -33,5 +33,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.12"
   }
 }
